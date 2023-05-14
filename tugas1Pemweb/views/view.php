@@ -29,7 +29,7 @@
           '<td>', $row['nama'], '</td>',
           '<td>', $row['prodi'], '</td>',
           '<td>', $row['email'], '</td>',
-          '<td>', '<a href="viewEdit.php?nim=' . $row['nim'] . '" class="button">Edit</a>', '</td>',
+          '<td>', '<a href="../views/viewEdit.php?nim=' . $row['nim'] . '" class="button">Edit</a>', '</td>',
           '<td>', '<a href="../model/delete_data.php?nim=' . $row['nim'] . '" class="button">Delete</a>', '</td>',        '</tr>';
         }
         ?>

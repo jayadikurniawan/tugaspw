@@ -1,9 +1,4 @@
 <?php
-session_start();
-if (!isset($_SESSION['status']) || $_SESSION['status'] != 'admin') {
-    header('Location: ../index.php');
-    exit;
-}
 include('koneksiMVC.php');
 
 $nim = $_GET['nim'];
