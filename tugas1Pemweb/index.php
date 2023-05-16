@@ -1,19 +1,7 @@
 <?php
-session_start();
-
-if (isset($_POST['submit'])) {
-
-    if ($_POST['username'] == 'admin' && $_POST['password'] == '12345') {
-
-        $_SESSION['status'] = 'admin';
-        header('Location: controller/invoke.php');
-        exit;
-    }
-    else {
-        $error = "";
-    }
-}
+require('model/login.php');
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -27,7 +15,7 @@ if (isset($_POST['submit'])) {
 
 <body>
     <br><br><br>
-    <form method="POST" action="controller/invoke.php">
+    <form method="POST" action="controller/controller.php">
         <label>Lihat data sebagai Tamu?</label>
         <input type="submit" name="view" value="Lihat">
         <?php

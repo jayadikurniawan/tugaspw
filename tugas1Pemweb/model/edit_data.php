@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->execute();
     $stmt->close();
 
-    header("Location: ../controller/invoke.php");
+    header("Location: ../controller/controller.php");
     exit();
 }
 

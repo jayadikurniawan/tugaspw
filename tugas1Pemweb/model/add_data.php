@@ -11,5 +11,5 @@ $stmt->bind_param("ssss", $nim, $nama, $prodi, $email);
 $result = $stmt->execute();
 $stmt->close();
 
-header("Location: ../controller/invoke.php");
+header("Location: ../controller/controller.php");
 exit();

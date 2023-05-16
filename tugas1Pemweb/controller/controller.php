@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("../model/get_data.php");
 
 class controller
@@ -21,4 +22,12 @@ class controller
         $proker = $this->getData->getData(); 
         include '../views/view2.php';
     }
+}
+
+$controller = new controller();
+
+if ($_SESSION['status'] == 'admin') {
+    $controller->invoke();
+} else {
+    $controller->invokeViewOnly();
 }

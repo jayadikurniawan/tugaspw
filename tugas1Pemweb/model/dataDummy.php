@@ -13,5 +13,6 @@ for ($x = 1; $x <= 10; $x++) {
     $stmt->close();
 }
 
-header("Location: ../controller/invoke.php");
+header("Location: ../controller/controller.php");
 exit();
+ 

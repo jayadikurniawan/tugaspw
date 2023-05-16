@@ -8,6 +8,6 @@ $stmt->bind_param("s", $nim);
 $stmt->execute();
 $stmt->close();
 
-header("Location: ../controller/invoke.php");
+header("Location: ../controller/controller.php");
 exit();
 ?>
